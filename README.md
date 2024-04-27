@@ -1,23 +1,19 @@
 # RPWDataGridView
 
 #### 介绍
-一个超级简洁的表格控件，支持固定多列
+一个超级简洁的表格控件，支持固定多列，目前支持基本数据加载，点击事件
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![Preview](./preview.gif)
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+自行打包依赖
+
+1. `RPWDataGridView<T>` 表格控件 T为数据类型
+1. 主要接口
+ + `build(...)` 添加列
+ + `setRowBuildListener`  行数据构建接口，在这设置每列显示的数据
+ + `setDataSource` 设置数据源
 
 #### 参与贡献
 
