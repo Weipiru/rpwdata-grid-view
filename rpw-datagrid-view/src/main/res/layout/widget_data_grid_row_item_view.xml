@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/ui_data_grid_row_min_height"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llFreezeColumn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="@drawable/data_grid_ver_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle|end" />
+
+    <com.rpw.view.RPWHorizontalScrollView
+        android:id="@+id/horScrollView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/llScrollColumn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/data_grid_ver_divider"
+            android:orientation="horizontal"
+            android:showDividers="middle" />
+    </com.rpw.view.RPWHorizontalScrollView>
+</LinearLayout>

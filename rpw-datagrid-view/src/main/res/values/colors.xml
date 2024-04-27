@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#fff</color>
+    <color name="default_text_color">#000</color>
+    <color name="ui_data_grid_header_bg_color">#E5E6E6</color>
+    <color name="ui_data_grid_freeze_row_bg_color">#EDEDED</color>
+    <color name="ui_data_grid_row_bg_color">#FFFFFF</color>
+    <color name="ui_data_grid_highlight_row_bg_color">#B7F7FF</color>
+</resources>
