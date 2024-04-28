@@ -2,8 +2,11 @@
 <resources>
     <color name="background_color">#fff</color>
     <color name="default_text_color">#000</color>
-    <color name="ui_data_grid_header_bg_color">#E5E6E6</color>
-    <color name="ui_data_grid_freeze_row_bg_color">#EDEDED</color>
+    <color name="ui_data_grid_header_bg_color">#90CAF9</color>
+    <color name="ui_data_grid_freeze_row_bg_color">#E0F2F1</color>
     <color name="ui_data_grid_row_bg_color">#FFFFFF</color>
-    <color name="ui_data_grid_highlight_row_bg_color">#B7F7FF</color>
+    <color name="ui_data_grid_highlight_row_bg_color">#BBDEFB</color>
+    <color name="ui_data_grid_row_hor_divider_color">#E8EAF6</color>
+    <color name="ui_data_grid_row_ver_divider_color">#E8EAF6</color>
+    <color name="ui_data_grid_header_divider_color">#64B5F6</color>
 </resources>

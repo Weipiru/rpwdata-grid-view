@@ -21,10 +21,10 @@
         app:layout_constraintStart_toStartOf="@id/v0"/>
 
     <View
-        android:id="@+id/v1"
+        android:id="@+id/viewHorHeaderDivider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/data_grid_ver_divider"
+        android:layout_height="@dimen/ui_data_grid_header_divider_size"
+        android:background="@color/ui_data_grid_header_divider_color"
         app:layout_constraintStart_toStartOf="@id/tbHeader"
         app:layout_constraintTop_toBottomOf="@id/tbHeader" />
 
@@ -33,9 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintEnd_toEndOf="@id/v1"
-        app:layout_constraintStart_toStartOf="@id/v1"
-        app:layout_constraintTop_toBottomOf="@id/v1" />
+        app:layout_constraintEnd_toEndOf="@id/viewHorHeaderDivider"
+        app:layout_constraintStart_toStartOf="@id/viewHorHeaderDivider"
+        app:layout_constraintTop_toBottomOf="@id/viewHorHeaderDivider" />
 
     <TextView
         android:id="@+id/tvDemo"

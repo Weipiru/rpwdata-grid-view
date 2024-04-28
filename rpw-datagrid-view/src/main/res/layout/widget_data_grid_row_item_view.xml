@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:minHeight="@dimen/ui_data_grid_row_min_height"
+    android:layout_height="@dimen/ui_data_grid_row_min_height"
+    android:background="@drawable/data_grid_view_row_item_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/llFreezeColumn"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:divider="@drawable/data_grid_ver_divider"
         android:orientation="horizontal"
-        android:showDividers="middle|end" />
+        android:showDividers="middle" />
+
+
+    <View
+        android:id="@+id/viewVerHeaderDivider"
+        android:background="@color/ui_data_grid_header_divider_color"
+        android:layout_width="@dimen/ui_data_grid_header_divider_size"
+        android:layout_height="match_parent"/>
 
     <com.rpw.view.RPWHorizontalScrollView
         android:id="@+id/horScrollView"
@@ -24,7 +34,6 @@
             android:id="@+id/llScrollColumn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:divider="@drawable/data_grid_ver_divider"
             android:orientation="horizontal"
             android:showDividers="middle" />
     </com.rpw.view.RPWHorizontalScrollView>

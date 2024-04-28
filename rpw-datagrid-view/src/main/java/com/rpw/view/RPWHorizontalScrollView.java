@@ -2,6 +2,7 @@ package com.rpw.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.widget.HorizontalScrollView;
 
 public class RPWHorizontalScrollView extends HorizontalScrollView {

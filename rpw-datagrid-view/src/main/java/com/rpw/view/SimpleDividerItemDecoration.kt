@@ -6,7 +6,8 @@ import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class SimpleDividerItemDecoration(context: Context, dividerDrawableId: Int) : RecyclerView.ItemDecoration() {
+class SimpleDividerItemDecoration(context: Context, dividerDrawableId: Int) :
+    RecyclerView.ItemDecoration() {
     private var divider: Drawable? = ContextCompat.getDrawable(context, dividerDrawableId)
 
     override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
@@ -21,5 +22,9 @@ class SimpleDividerItemDecoration(context: Context, dividerDrawableId: Int) : Re
             divider?.setBounds(left, top, right, bottom)
             divider?.draw(c)
         }
+    }
+
+    fun setDivider(divider: Drawable?) {
+        this.divider = divider
     }
 }
