@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
                     DensityUtil.dpToPx(this@MainActivity, 100), "密码", false
                 ),
                 RPWDataGridView.RPWDataGridColumn(
+                    DensityUtil.dpToPx(this@MainActivity, 200), "身份证号码", false
+                ),
+                RPWDataGridView.RPWDataGridColumn(
+                    DensityUtil.dpToPx(this@MainActivity, 200), "出生年月", false
+                ),
+                RPWDataGridView.RPWDataGridColumn(
                     DensityUtil.dpToPx(this@MainActivity, 60), "性别", false
                 ),
                 RPWDataGridView.RPWDataGridColumn(
@@ -56,10 +62,12 @@ class MainActivity : AppCompatActivity() {
                 override fun onBuildRow(rowItemView: RPWDataGridIRowItemView, data: ItemData) {
                     rowItemView.cells[0].text = data.name
                     rowItemView.cells[1].text = data.password
-                    rowItemView.cells[2].text = data.sex
-                    rowItemView.cells[3].text = data.phone
-                    rowItemView.cells[4].text = data.email
-                    rowItemView.cells[5].text = data.address
+                    rowItemView.cells[2].text = "11235842364564582"
+                    rowItemView.cells[3].text = "2024-04-28"
+                    rowItemView.cells[4].text = data.sex
+                    rowItemView.cells[5].text = data.phone
+                    rowItemView.cells[6].text = data.email
+                    rowItemView.cells[7].text = data.address
                 }
             })
 

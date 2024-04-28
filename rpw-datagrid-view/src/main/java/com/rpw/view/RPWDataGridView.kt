@@ -114,7 +114,7 @@ class RPWDataGridView<T> @JvmOverloads constructor(
         recyclerView.adapter = dataGridAdapter
         setDataSource(emptyList())
         dataGridAdapter.notifyDataSetChanged()
-        alignItems(scrollX)
+        alignItems(horScrollOffset)
     }
 
     /**
@@ -357,7 +357,9 @@ class RPWDataGridView<T> @JvmOverloads constructor(
             }
 
             Log.i(TAG, "onBindViewHolder: $horScrollOffset")
-            holder.rowView.setHorOffset(horScrollOffset)
+            holder.rowView.post {
+                holder.rowView.setHorOffset(horScrollOffset)
+            }
         }
     }
 
